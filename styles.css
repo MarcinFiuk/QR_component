@@ -49,6 +49,7 @@ body {
   font-family: Outfit, system-ui, -apple-system, Roboto, "Open Sans", sans-serif;
   background-color: var(--body-background);
   line-height: 1.4;
+  min-height: 100dvh;
 }
 
 img {
