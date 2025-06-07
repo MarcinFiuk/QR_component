@@ -20,21 +20,18 @@
   --c-slate-500: hsl(216, 15%, 48%);
   --c-slate-300: hsl(212, 45%, 89%);
   --c-white: hsl(0, 0%, 100%);
+  --c-indigo-500: hsl(228, 45%, 44%);
   --body-background: var(--c-slate-300);
   --card-background: var(--c-white);
   --heading-color: var(--c-slate-900);
   --text-color: var(--c-slate-500);
+  --attribution-text-color: var(--c-indigo-500);
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-html,
-body {
-  min-height: 100%;
 }
 
 body,
@@ -62,7 +59,7 @@ img {
   padding-inline: 1rem;
   padding-block-start: 1rem;
   padding-block-end: 2.5rem;
-  max-width: 320px;
+  max-width: 20rem;
   border-radius: 1.25em;
 }
 
@@ -92,5 +89,5 @@ img {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--attribution-text-color);
 }
