@@ -73,6 +73,7 @@ img {
 
 .card__heading {
   font-size: 1.375rem;
+  font-weight: 700;
   text-align: center;
   color: var(--heading-color);
   margin-block-end: 1rem;
