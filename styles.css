@@ -26,6 +26,7 @@
   --heading-color: var(--c-slate-900);
   --text-color: var(--c-slate-500);
   --attribution-text-color: var(--c-indigo-500);
+  --shadow-color: hsla(0, 0%, 100%, 0.0477);
 }
 
 *,
@@ -44,8 +45,10 @@ body {
   display: grid;
   place-items: center;
   font-family: Outfit, system-ui, -apple-system, Roboto, "Open Sans", sans-serif;
+  font-weight: 400;
   background-color: var(--body-background);
   line-height: 1.4;
+
   min-height: 100dvh;
 }
 
@@ -61,6 +64,8 @@ img {
   padding-block-end: 2.5rem;
   max-width: 20rem;
   border-radius: 1.25em;
+  /* box-shadow: 0 25px 25px 0 var(--shadow-color); */
+  box-shadow: 0 25px 25px 0 var(--shadow-color);
 }
 
 .card__image {
