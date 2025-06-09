@@ -42,13 +42,12 @@ p {
 }
 
 body {
-  display: grid;
-  place-items: center;
   font-family: Outfit, system-ui, -apple-system, Roboto, "Open Sans", sans-serif;
   font-weight: 400;
   background-color: var(--body-background);
   line-height: 1.4;
-
+  display: grid;
+  place-items: center;
   min-height: 100dvh;
 }
 
@@ -64,7 +63,6 @@ img {
   padding-block-end: 2.5rem;
   max-width: 20rem;
   border-radius: 1.25em;
-  /* box-shadow: 0 25px 25px 0 var(--shadow-color); */
   box-shadow: 0 25px 25px 0 var(--shadow-color);
 }
 
@@ -89,15 +87,20 @@ img {
   text-align: center;
 }
 
+footer {
+  @media (height>35.5rem) {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+  }
+}
+
 .attribution {
   font-size: 0.8em;
   color: var(--heading-color);
   margin-top: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  translate: -50%;
-  padding: 28px;
+  padding: 1rem;
 }
 .attribution a {
   color: var(--attribution-text-color);
